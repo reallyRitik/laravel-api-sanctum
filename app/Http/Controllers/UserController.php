@@ -42,7 +42,7 @@ class UserController extends Controller
     
         return response()->json([
             'message' => 'Successfully logged out!',
-        ]);
+        ], 200);
     }
 
     public function login(Request $request)
