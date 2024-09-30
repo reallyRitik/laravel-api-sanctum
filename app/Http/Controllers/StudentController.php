@@ -69,4 +69,12 @@ class StudentController extends Controller
     {
        return student::find($id)->delete();
     }
+
+    /**
+     * search based on city
+     */
+    public function search($city)
+    {
+       return student::where('city', $city)->get();
+    }
 }
