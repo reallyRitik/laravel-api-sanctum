@@ -67,6 +67,6 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+       return student::find($id)->delete();
     }
 }
